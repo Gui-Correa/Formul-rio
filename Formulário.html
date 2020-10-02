@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Usuário</title>
+
+<script>
+	function funcao1()
+		{
+		alert("Dados enviados com sucesso!");
+	}
+</script>
+</head>
+<body>
+	<form>
+		<fieldset id=F1>
+			<legend>Cadasto de Usuário</legend>
+			<fieldset id="F2">
+				<legend>Dados Pessoais</legend><br>
+				<label for="nome">Nome:</label><br>
+				<input type="text" name="nome" id="nome" required 
+				placeholder="Seu nome completo"><br>
+
+				<label for="E-mail">E-mail:</label><br>
+				<input type="text" name="E-mail" id="E-mail"
+				placeholder="ex.seuemail@provedor.com" required><br>
+
+				<label for="nasc">Data de Nascimento:</label><br>
+				<input type="date" name="nasc" id="nasc" min="1900-01-01" 
+				max="2070-12-31" required><br>
+
+				<label for="sexo">Escolha seu sexo:</label><br>
+				<input type="radio" name="sexo" valeu="M">Masculino</input><br>
+				<input type="radio" name="sexo" valeu="F">Feminino</input><br>
+			</fieldset><br>
+
+			<fieldset id="F3">
+				<legend>Endereço</legend><br>
+				<label for="Endereço">Endereço:</label><br>
+				<input type="text" name="Endereço" id="Endereço"
+				placeholder="Endereço" required><br>
+
+				<label for="Número">Número:</label><br>
+				<input type="text" name="numero" id="numero"
+				placeholder="Número" required><br>
+
+				<label for="CEP">CEP:</label><br>
+				<input type="text" name="CEP" id="CEP" 
+				placeholder="ex.:00000-000" required><br>
+
+				<label for="Bairro">Bairro:</label><br>
+				<input type="text" name="Bairro" id="Bairro"
+				placeholder="Bairro" required><br>
+
+				<label for="Cidade">Cidade:</label><br>
+				<select name="Cidade" id="Cidade"><br>
+					<option desabled="desabled">Escolha uma cidade</option>
+					<option value="1">Itanhaém</option>
+					<option value="2">Praia Grande</option>
+					<option value="3">Mongaguá</option>
+					<option value="4">Peruíbe</option>
+					<option value="5">Santos</option>
+				</select>
+			</fieldset><br>
+			<fieldset id="F4">
+				<legend>Interesses</legend><br>
+				<label for="Interesses">Marque quantos julgar necessário:</label><br>
+				<input type="checkbox" name="Interesses[]" value="Música">Música<br>
+				<input type="checkbox" name="Interesses[]" value="Filmes">Filmes<br>
+				<input type="checkbox" name="Interesses[]" value="Viagens">Viagens<br>
+				<input type="checkbox" name="Interesses[]" value="Moda">Moda<br>
+				<input type="checkbox" name="Interesses[]" value="gastronomia">Gastronomia<br>
+				<input type="checkbox" name="Interesses[]" value="Tecnologia">Tecnologia<br>		
+				<input type="checkbox" name="Interesses[]" value="Arte">Arte<br>				
+				<input type="checkbox" name="Interesses[]" value="Literatura">Literatura<br>			
+				<input type="checkbox" name="Interesses[]" value="Carros">Carros<br>
+				<input type="checkbox" name="Interesses[]" value="Motos">Motos<br>
+			</fieldset><br>
+				<input type="button" onclick="funcao1()" value="Cadastrar"/>
+		</fieldset>
+	</form>
+<form>
+	<style>
+		#F1{
+			background-color: #696969;
+		}
+		#F2{
+			background-color: #98FB98;
+		}
+		#F3{
+			background-color: #87CEFA;
+		}
+		#F4{
+			background-color: #FFFF00;
+		}
+		legend{
+			color: black;
+			font-weight: bolder;
+			font-size: 40px; 
+		}
+		#nome{
+			height: 20px;
+			width: 500px;
+		}
+		#E-mail{
+			height: 20px;
+			width: 500px;
+		}
+		#nasc{
+			height: 20px;
+			width: 500px;
+		}
+		#Endereço{
+			height: 20px;
+			width: 500px;
+		}
+		#numero{
+			height: 20px;
+			width: 500px;
+		}
+		#CEP{
+			height: 20px;
+			width: 500px;
+		}
+		#Bairro{
+			height: 20px;
+			width: 500px;
+		}
+		#Cidade{
+			height: 20px;
+			width: 500px;
+		}
+	</style>
+</form>
+</body>
+</html>
